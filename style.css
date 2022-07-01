@@ -42,7 +42,7 @@ main {
   background-image: url(images/header-shapes\ mobile.png);
 }
 
-h2 {
+h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300px;
@@ -74,6 +74,12 @@ h2 {
   color: #7f8cff;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+li,
+ul {
+  display: inline;
+  list-style-type: none;
 }
 
 .contacts {
