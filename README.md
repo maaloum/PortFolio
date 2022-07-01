@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is project aim to create my portfolio.
+> This is project aims to create my portfolio.
 
 
 ## Built With
