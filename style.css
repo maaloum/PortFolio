@@ -17,12 +17,15 @@ header {
   padding-right: 20px;
   font-size: 30px;
   color: blue;
+  background-image: url(images/first-page.jpg);
+  margin-bottom: 100px;
 }
 
 .grid-container {
   display: grid;
   grid-template-rows: 3fr 1fr;
   grid-gap: 20px;
+  justify-content: center;
 }
 
 .first-page {
@@ -101,6 +104,7 @@ ul {
 
 .link {
   padding: 3px;
+  height: s20px;
   color: #505f79;
 }
 
@@ -109,6 +113,7 @@ ul {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   background-color: white;
+  justify-content: center;
 }
 
 .job {
@@ -116,6 +121,7 @@ ul {
   flex-direction: column;
   background-color: beige;
   border-radius: 16px;
+  align-content: center;
   align-items: center;
   margin: 20px;
   gap: 12px;
@@ -125,6 +131,8 @@ ul {
 .content {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  padding: 16px;
 }
 
 ul > li {
