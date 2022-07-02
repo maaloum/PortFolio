@@ -192,10 +192,10 @@ a {
   letter-spacing: 0.03em;
 }
 
-.programming{
+.programming {
   width: 45px;
   height: 24px;
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 8px;
 }
 
@@ -215,8 +215,8 @@ button {
 }
 
 button:hover {
-    background-color: #008CBA;
-    color: white;
+  background-color: #008cba;
+  color: white;
 }
 
 .About {
@@ -250,8 +250,7 @@ h2 {
   font-size: 20px;
   line-height: 24px;
   padding: 10px;
-  color: #000000;
-
+  color: #000;
 }
 
 .languages {
@@ -272,7 +271,7 @@ h2 {
   border: 5px solid  #f7f7f9;
   border-radius: 10px;
   margin: 3px;
-  background: #F7F7F9;
+  background: #f7f7f9;
 }
 
 .tech {
