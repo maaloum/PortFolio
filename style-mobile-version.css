@@ -4,124 +4,31 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   height: 100vh;
 }
 
-header {
-  height: 150px;
-  padding: 20px;
-}
-
-.menu {
-  padding-right: 20px;
-  font-size: 30px;
-  color: blue;
-  background-image: url(images/first-page.jpg);
-  margin-bottom: 100px;
-}
-
-.grid-container {
+main {
   display: grid;
   grid-template-rows: 3fr 1fr;
   grid-gap: 20px;
-  justify-content: center;
-}
-
-.first-page {
-  background-image: url(images/header-background-mobile.jpg);
-}
-
-.container {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logo {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #6070ff;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  background-image: url(images/header-shapes\ mobile.png);
-}
-
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 300px;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
-  margin: 80px 20px 20px 20px;
-}
-
-.description {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  font-style: bold;
-  line-height: 24px;
-  color: #344563;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.connect {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #7f8cff;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-li,
-ul {
-  display: inline;
-  list-style-type: none;
-}
-
-.contacts {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 20px;
-  margin-top: 5px;
-}
-
-.link {
-  padding: 3px;
-  height: s20px;
-  color: #505f79;
 }
 
 .works {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  background-color: white;
-  justify-content: center;
 }
 
-.job {
+.job-1,
+.job-2,
+.job-3,
+.job-4 {
   display: flex;
   flex-direction: column;
   background-color: beige;
   border-radius: 16px;
-  align-content: center;
   align-items: center;
   margin: 20px;
   gap: 12px;
@@ -131,11 +38,10 @@ ul {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 16px;
 }
 
-ul > li {
+ul,
+li {
   display: inline;
   padding: 7px;
   gap: 5px;
@@ -200,13 +106,6 @@ a {
   letter-spacing: 0.03em;
 }
 
-.programming {
-  width: 45px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
-}
-
 button {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -215,22 +114,16 @@ button {
   line-height: 24px;
   color: #396df2;
   width: 150px;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
   border: 1px solid #396df2;
   border-radius: 10px;
   background-color: transparent;
 }
 
-button:hover {
-  background-color: #008cba;
-  color: white;
-}
-
 .About {
   display: flex;
   flex-direction: column;
-  background-color: white;
 
   /* background-color: aqua; */
 }
@@ -243,6 +136,37 @@ h2 {
   line-height: 52px;
   color: #172b4d;
   padding: 10px;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: bold;
+  line-height: 24px;
+  color: #344563;
+  padding: 10px;
+
+  /* margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; */
+}
+
+.connect {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #7f8cff;
+  padding: 10px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .skills {
@@ -258,7 +182,6 @@ h2 {
   font-size: 20px;
   line-height: 24px;
   padding: 10px;
-  color: #000;
 }
 
 .languages {
@@ -275,11 +198,9 @@ h2 {
 }
 
 .languages > li {
-  display: flex;
   border: 5px solid  #f7f7f9;
   border-radius: 10px;
   margin: 3px;
-  background: #f7f7f9;
 }
 
 .tech {
@@ -289,7 +210,6 @@ h2 {
   font-size: 15px;
   line-height: 20px;
   margin: 15px;
-  color: #253858;
 }
 
 hr {
