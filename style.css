@@ -365,10 +365,10 @@ textarea:focus {
   border-color: #000;
 }
 
-.shape{
+.shape {
   width: 134px;
   height: 5px;
   margin-bottom: 5px;
   border-radius: 10px;
-  background: #0D151E;
+  background: #0d151e;
 }
