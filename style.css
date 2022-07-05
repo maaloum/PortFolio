@@ -331,7 +331,7 @@ hr {
   margin-top: 100px;
 }
 
-.first-container>p {
+.first-container > p {
   color: white;
 }
 
@@ -354,7 +354,7 @@ form > ul > li > input {
   width: 327px;
 }
 
-form>ul>li>textarea {
+form > ul > li > textarea {
   color: #b3bac5;
   width: 327px;
   padding: 10px;
