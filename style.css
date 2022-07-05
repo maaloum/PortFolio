@@ -323,3 +323,22 @@ hr {
   color: white;
   margin-top: 100px;
 }
+
+form > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+form > ul > li > input {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+  width: 327px;
+}
