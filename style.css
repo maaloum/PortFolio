@@ -313,3 +313,13 @@ hr {
   background-size: cover;
   width: 100%;
 }
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-container > h2 {
+  color: white;
+  margin-top: 100px;
+}
