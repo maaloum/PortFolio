@@ -24,8 +24,6 @@ header {
   display: grid;
   grid-template-rows: 3fr 1fr;
   grid-gap: 20px;
-
-  /* justify-content: center; */
   width: 100%;
 }
 
@@ -419,11 +417,6 @@ textarea:focus {
 
   .sct-1 {
     flex: 3;
-
-    /* width: 300px;
-    padding: 20px; */
-
-    /* margin: px; */
   }
 
   .languages {
