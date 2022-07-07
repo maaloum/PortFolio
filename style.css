@@ -381,16 +381,23 @@ textarea:focus {
     flex-direction: column;
     justify-content: center;
     margin: 150px;
+    border-bottom-left-radius: 2px solid black;
   }
 
   .grid-container {
     grid-template-rows: 2fr 1fr;
+    background-color: #fff;
   }
 
   .container > nav {
     display: inline-block;
     font-weight: 500px;
     color: #344563;
+  }
+
+  .works {
+    background-color: #e5e5e5;
+    margin-top: 200px;
   }
 
   .works > .job {
