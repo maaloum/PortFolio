@@ -1,0 +1,89 @@
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+    width: 100%;
+  }
+
+  header {
+    height: 100px;
+    padding: 20px;
+  }
+
+  main {
+    height: 650px;
+    background-image: url(images/desktop/Header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main > .section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px;
+    border-bottom-left-radius: 2px solid black;
+  }
+
+  .grid-container {
+    grid-template-rows: 2fr 1fr;
+    background-color: #fff;
+  }
+
+  .container > nav {
+    display: inline-block;
+    font-weight: 500px;
+    color: #344563;
+  }
+
+  .works {
+    background-color: #e5e5e5;
+    margin-top: 200px;
+  }
+
+  .works > .job {
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    width: 800px;
+    margin-bottom: 50px;
+  }
+
+  .job > .content {
+    flex-basis: 450px;
+  }
+
+  .About {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top-right-radius: 24px solid;
+    background-color: #fff;
+    margin: 200px;
+  }
+
+  .sct-1 {
+    flex: 3;
+  }
+
+  .languages {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .languages > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .contacts {
+    flex: 3;
+  }
+
+  .menu {
+    display: none;
+  }
+}
