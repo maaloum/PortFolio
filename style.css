@@ -369,3 +369,11 @@ textarea:focus {
   border-radius: 10px;
   background: #0d151e;
 }
+
+input:hover {
+  transform: translate(2.5rem, 2ex);
+}
+
+textarea:hover {
+  transform: translate(2.5rem, 2ex);
+}
