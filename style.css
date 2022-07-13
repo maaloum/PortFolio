@@ -381,3 +381,8 @@ textarea:hover {
 img:hover {
   transform: scale(0.7);
 }
+
+label{
+  margin-top: 15px;
+  color: white;
+}
