@@ -13,6 +13,12 @@ header {
   padding: 20px;
 }
 
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   padding-right: 20px;
   font-size: 30px;
@@ -37,7 +43,7 @@ header {
   justify-content: space-between;
 }
 
-.container > nav {
+nav {
   display: none;
 }
 
@@ -380,4 +386,42 @@ textarea:hover {
 
 img:hover {
   transform: scale(0.7);
+}
+
+.nav-style {
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-style ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.nav-style ul li a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
+  cursor: pointer;
+}
+
+.close {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  margin-top: -300px;
+  float: right;
+  margin-right: 25px;
+  cursor: pointer;
 }
