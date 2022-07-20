@@ -14,5 +14,6 @@ icon.addEventListener('click', () => {
     span.addEventListener('click', () => {
       container.removeChild(nav);
     });
+    document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => { container.removeChild(nav); }));
   }
 });
