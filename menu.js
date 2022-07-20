@@ -1,6 +1,5 @@
 const icon = document.querySelector('#icon');
 icon.addEventListener('click', () => {
-  const container = document.querySelector('.container');
   const nav = document.querySelector('nav');
   const span = document.createElement('span');
   span.innerHTML += '<span>&times;</span>';
@@ -12,8 +11,8 @@ icon.addEventListener('click', () => {
     nav.style.display = 'block';
     nav.classList.add('nav-style');
     span.addEventListener('click', () => {
-      container.removeChild(nav);
+      nav.style.display = 'none';
     });
-    document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => { container.removeChild(nav); }));
+    document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => { nav.style.display = 'none'; }));
   }
 });
