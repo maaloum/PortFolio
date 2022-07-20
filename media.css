@@ -37,6 +37,10 @@
     width: 30%;
   }
 
+  nav > ul {
+    display: flex;
+  }
+
   .works {
     background-color: #e5e5e5;
     margin-top: 200px;
