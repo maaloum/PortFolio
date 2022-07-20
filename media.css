@@ -22,8 +22,6 @@
     flex-direction: column;
     justify-content: center;
     margin: 150px;
-
-    /* border-bottom-left-radius: 2px solid black; */
   }
 
   .grid-container {
@@ -33,8 +31,6 @@
 
   .container > nav {
     display: inline-block;
-
-    /* font-weight: 500px; */
     color: #344563;
     width: 30%;
   }
