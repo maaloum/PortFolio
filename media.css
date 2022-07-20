@@ -22,7 +22,6 @@
     flex-direction: column;
     justify-content: center;
     margin: 150px;
-    border-bottom-left-radius: 2px solid black;
   }
 
   .grid-container {
@@ -32,8 +31,12 @@
 
   .container > nav {
     display: inline-block;
-    font-weight: 500px;
     color: #344563;
+    width: 30%;
+  }
+
+  nav > ul {
+    display: flex;
   }
 
   .works {
@@ -58,7 +61,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-top-right-radius: 24px solid;
+
+    /* border-top-right-radius: 24px solid; */
     background-color: #fff;
     margin: 200px;
   }
