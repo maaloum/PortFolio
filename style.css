@@ -381,9 +381,9 @@ textarea:hover {
   transform: translate(2.5rem, 2ex);
 }
 
-img:hover {
+/* img:hover {
   transform: scale(0.7);
-}
+} */
 
 .nav-style {
   background-color: #6070ff;
@@ -413,12 +413,47 @@ img:hover {
   cursor: pointer;
 }
 
-.close {
-  font-size: 45px;
-  font-weight: 600;
-  color: white;
-  margin-top: -300px;
-  float: right;
-  margin-right: 25px;
-  cursor: pointer;
+
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  max-height: 100vh;
+  overflow: auto;
+  background: white;
+  backdrop-filter: blur(3px);
+  padding: 50px 16px;
+  box-sizing: border-box;
+}
+
+.overlay-content {
+  background-color: rgb(121, 216, 70);
+  box-sizing: border-box;
+  padding: 20px 16px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.head-title{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.close{
+  font-size: 16px;
+  color: #67798E;
+}
+.popimg{
+  max-width: 100%;
+  margin: 12px;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
 }
