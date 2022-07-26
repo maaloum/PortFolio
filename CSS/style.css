@@ -314,7 +314,7 @@ hr {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url(images/desktop/contact-background.svg);
+  background-image: url(../images/desktop/contact-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -381,11 +381,9 @@ textarea:hover {
   transform: translate(2.5rem, 2ex);
 }
 
-/* img:hover {
-  transform: scale(0.7);
-} */
-
 .nav-style {
+  display: flex;
+  justify-content: space-between;
   background-color: #6070ff;
   mix-blend-mode: multiply;
   width: 100vw;
@@ -396,11 +394,21 @@ textarea:hover {
   z-index: 10;
 }
 
+.pop-content > ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .nav-style ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 50px;
+  width: 40%;
 }
 
 .nav-style ul li a {
@@ -413,47 +421,87 @@ textarea:hover {
   cursor: pointer;
 }
 
+.nav-style > .close {
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+  margin: 20px;
+}
 
-
-#overlay {
+.pop {
   display: none;
   position: fixed;
-  top: 10%;
-  bottom: 10%;
-  left: 0;
-  right: 0;
+  top: 0;
+  bottom: 0;
   max-height: 100vh;
+  width: 100vw;
   overflow: auto;
-  background: white;
+  background: rgb(193 199 208 / 50%);
   backdrop-filter: blur(3px);
   padding: 50px 16px;
   box-sizing: border-box;
 }
 
-.overlay-content {
-  background-color: rgb(121, 216, 70);
+.pop-content {
+  background-color: white;
   box-sizing: border-box;
   padding: 20px 16px;
   position: relative;
   border-radius: 15px;
 }
 
-.head-title{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.close{
-  font-size: 16px;
-  color: #67798E;
-}
-.popimg{
-  max-width: 100%;
-  margin: 12px;
-}
-
-.bottom{
+.head-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.close-icon {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.work-place {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.pop-content > ul > li {
+  list-style: none;
+}
+
+.pop-content > ul > li > .year {
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.popimg {
+  display: flex;
+  position: relative;
+  width: 620px;
+  height: 380px;
+  margin-bottom: 40px;
+}
+
+.popup-buttons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0fr 1fr;
+  column-gap: 12px;
+  border-top: 1px solid #ebecf0;
+  padding-top: 25px;
+}
+
+.popup-buttons > .pop-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
 }
