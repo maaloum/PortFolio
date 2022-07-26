@@ -144,3 +144,22 @@ projectnBtn.forEach((btn, ind) => {
     Popup(ind);
   });
 });
+
+const inputEmail = document.querySelector('#email');
+const submit = document.querySelector('form button');
+// const validateEmail = (email) => {
+//   if (email !== email.toLowerCase()) return false;
+//   return true;
+// };
+
+submit.addEventListener('submit', e => {
+  e.preventDefault();
+  if(!inputEmail.value.trim().toLowerCase()){
+    submit.submit();
+  } else{
+    alert('hello');
+  }
+  console.log('hi');
+});
+
+
