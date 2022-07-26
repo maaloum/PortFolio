@@ -13,11 +13,17 @@ header {
   padding: 20px;
 }
 
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .menu {
   padding-right: 20px;
   font-size: 30px;
   color: blue;
-  margin-bottom: 100px;
 }
 
 .grid-container {
@@ -37,7 +43,7 @@ header {
   justify-content: space-between;
 }
 
-.container > nav {
+nav {
   display: none;
 }
 
@@ -69,7 +75,6 @@ main {
 h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 700px;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
@@ -80,7 +85,6 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  font-style: bold;
   line-height: 24px;
   color: #344563;
   margin-left: 20px;
@@ -116,7 +120,6 @@ ul {
 
 .link {
   padding: 3px;
-  height: s20px;
   color: #505f79;
 }
 
@@ -382,7 +385,5 @@ img:hover {
   transform: scale(0.7);
 }
 
-label {
-  margin-top: 15px;
-  color: white;
+
 }

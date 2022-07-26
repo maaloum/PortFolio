@@ -40,7 +40,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thank you Microverse
+- Thank you Microverse for the support.
 
 ## 📝 License
 
