@@ -131,8 +131,9 @@ function Popup(position) {
   if (pop.style.display === 'block') {
     pop.style.display = 'none';
   } else {
-    pop.style.display = 'block';
+    pop.style.display = 'flex';
     document.querySelector('.close-icon').addEventListener('click', () => {
+      pop.removeChild(popContent);
       pop.style.display = 'none';
     });
   }

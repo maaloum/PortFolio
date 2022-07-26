@@ -96,24 +96,17 @@
     flex-direction: column;
     justify-items: center;
     width: 650px;
-    height: 650px;
+    max-height: 600px;
     background: #fff;
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
   }
 
-  .close-icon {
-    right: 30px;
-    cursor: pointer;
-  }
-
   .popimg {
-    display: flex;
-    position: relative;
-    width: 620px;
-    height: 380px;
-    margin-bottom: 40px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
   }
 
   .bottom {
