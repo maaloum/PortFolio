@@ -314,7 +314,7 @@ hr {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url(images/desktop/contact-background.svg);
+  background-image: url(../images/desktop/contact-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -381,11 +381,9 @@ textarea:hover {
   transform: translate(2.5rem, 2ex);
 }
 
-img:hover {
-  transform: scale(0.7);
-}
-
 .nav-style {
+  display: flex;
+  justify-content: space-between;
   background-color: #6070ff;
   mix-blend-mode: multiply;
   width: 100vw;
@@ -396,11 +394,21 @@ img:hover {
   z-index: 10;
 }
 
+.pop-content > ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .nav-style ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 50px;
+  width: 40%;
 }
 
 .nav-style ul li a {
@@ -413,12 +421,84 @@ img:hover {
   cursor: pointer;
 }
 
-.close {
-  font-size: 45px;
-  font-weight: 600;
+.nav-style > .close {
+  font-size: 60px;
   color: white;
-  margin-top: -300px;
-  float: right;
-  margin-right: 25px;
   cursor: pointer;
+  margin: 20px;
+}
+
+.pop {
+  display: none;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  max-height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background: rgb(193 199 208 / 50%);
+  backdrop-filter: blur(3px);
+  padding: 50px 16px;
+}
+
+.pop-content {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #fff;
+  border: 1px solid #ebecf0;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  border-radius: 15px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.head-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.work-place {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.pop-content > ul > li {
+  list-style: none;
+}
+
+.pop-content > ul > li > .year {
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.popimg {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.popup-buttons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0fr 1fr;
+  column-gap: 12px;
+  border-top: 1px solid #ebecf0;
+}
+
+.popup-buttons > .pop-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
 }
