@@ -166,13 +166,3 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
-
-// submit.addEventListener('submit', e => {
-//   e.preventDefault();
-//   if(!inputEmail.value.trim().toLowerCase()){
-//     submit.submit();
-//   } else{
-//     alert('hello');
-//   }
-//   console.log('hi');
-// });
