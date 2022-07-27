@@ -502,3 +502,12 @@ textarea:hover {
   font-weight: 500;
   line-height: 20px;
 }
+
+.message {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: red;
+  text-align: center;
+  padding-bottom: 20px;
+}
