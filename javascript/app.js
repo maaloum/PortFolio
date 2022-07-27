@@ -54,6 +54,8 @@ const projects = [
 
   }];
 
+/* -----------------------RENDERING CARD------------------------- */
+
 const section = document.querySelector('.works');
 const pop = document.querySelector('#pop-window');
 projects.forEach((project, id) => {
@@ -80,6 +82,7 @@ projects.forEach((project, id) => {
   section.appendChild(cards);
 });
 
+/* -----------------------POP UP WINDOW------------------------- */
 function Popup(position) {
   const popContent = document.createElement('section');
   popContent.innerHTML = (`
@@ -144,6 +147,8 @@ projectnBtn.forEach((btn, ind) => {
     Popup(ind);
   });
 });
+
+/* -----------------------Validation form client side------------------------- */
 
 const form = document.querySelector('#form');
 const inputEmail = document.querySelector('#email');
