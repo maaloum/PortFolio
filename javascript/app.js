@@ -145,21 +145,34 @@ projectnBtn.forEach((btn, ind) => {
   });
 });
 
+const form = document.querySelector('#form');
 const inputEmail = document.querySelector('#email');
-const submit = document.querySelector('form button');
-// const validateEmail = (email) => {
-//   if (email !== email.toLowerCase()) return false;
-//   return true;
-// };
 
-submit.addEventListener('submit', e => {
+const validateEmail = (email) => {
+  if (email === email.toLowerCase()) return true;
+  return false;
+};
+
+form.addEventListener('submit', (e) => {
+  const invalidMessage = 'Email should be lowercase letters';
+  const messageDisplay = document.getElementById('message');
   e.preventDefault();
-  if(!inputEmail.value.trim().toLowerCase()){
-    submit.submit();
-  } else{
-    alert('hello');
+
+  if ((!validateEmail(inputEmail.value.trim()))) {
+    messageDisplay.innerHTML = invalidMessage;
+    messageDisplay.classList.add('message');
+  } else {
+    messageDisplay.innerHTML = '';
+    form.submit();
   }
-  console.log('hi');
 });
 
-
+// submit.addEventListener('submit', e => {
+//   e.preventDefault();
+//   if(!inputEmail.value.trim().toLowerCase()){
+//     submit.submit();
+//   } else{
+//     alert('hello');
+//   }
+//   console.log('hi');
+// });
