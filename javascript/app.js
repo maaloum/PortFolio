@@ -151,7 +151,9 @@ projectnBtn.forEach((btn, ind) => {
 /* -----------------------Validation form client side------------------------- */
 
 const form = document.querySelector('#form');
+const inputName = form["name"];
 const inputEmail = document.querySelector('#email');
+const inpuTextArea = form["message"];
 
 const validateEmail = (email) => {
   if (email === email.toLowerCase()) return true;
@@ -173,3 +175,20 @@ form.addEventListener('submit', (e) => {
 });
 
 /* -----------------------LOCAL STORAGE------------------------- */
+
+const data = JSON.parse(localStorage.getItem('formData')) || [];
+const addData = (name, email, textArea) =>{
+  data.push({
+    name,
+    email,
+    textArea,
+  });
+  window.localStorage.setItem('formData', JSON.stringify(data));
+
+}
+
+form.onsubmit = (e) =>{
+  e.preventDefault();
+  addData(inputName.value, inputEmail.value, inpuTextArea.value);
+
+}
