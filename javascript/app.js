@@ -171,3 +171,5 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+/* -----------------------LOCAL STORAGE------------------------- */
