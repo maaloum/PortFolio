@@ -1,40 +1,43 @@
 const projects = [
   {
-    title: 'Tonic',
+    title: 'Mawazine Website',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      company: 'Mawazine',
+      role: 'Front End Dev',
+      year: '2022',
     },
-    img: 'images/Snapshoot-Portfolio.jpg',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    img: 'images/screenshoot-1.jpeg',
+    description: 'A website for Mawazine festival in Morocco with a responsive design and a mobile version. The project was built using HTML, CSS, and JavaScript.',
     skills: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+    link: 'https://maaloum.github.io/Capstone-I/',
     btn1: 'See live',
     btn2: 'See Source',
   },
   {
-    title: 'Multi-Post Stories',
+    title: 'Todo list',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      company: 'Microverse',
+      role: 'Front End Dev',
+      year: '2022',
     },
-    img: 'images/Snapshoot-Portfolio-2.jpg"',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    img: 'images/Screenshot-2.png',
+    description: 'A todo list app built using HTML, CSS, and JavaScript. The app allows users to add, edit, and delete tasks. It also allows users to filter tasks by project.',
     skills: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+    link: 'https://maaloum.github.io/To-do-list/dist/',
     btn1: 'See live',
     btn2: 'See Source',
   },
   {
-    title: 'Tonic',
+    title: 'Prodecut-Management-System',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
+      company: 'AmanSi',
+      role: 'Front End Dev',
       year: '2015',
     },
-    img: 'images/Snapshoot-Portfolio.jpg',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    img: 'images/Screenshoot-3.png',
+    description: 'A product management system built using HTML, CSS, and JavaScript. The app allows users to add, edit, and delete products. It also allows users to filter products by category or name of product.',
     skills: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+    link: 'https://maaloum.github.io/Prodecut-Management-System/',
     btn1: 'See live',
     btn2: 'See Source',
 
@@ -111,7 +114,7 @@ function Popup(position) {
       </ul>
       <div class="popup-buttons">
         <button type="button" class="pop-btn">
-                <a class="btn-live"href="">
+                <a class="btn-live"href="${projects[position].link}" target="_blank">
                 ${
     projects[position].btn1
     } &nbsp;&nbsp;&nbsp;

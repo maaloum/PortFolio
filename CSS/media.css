@@ -89,6 +89,10 @@
     display: none;
   }
 
+  .projetc-image {
+    width: 50%;
+  }
+
   .pop {
     display: none;
     position: fixed;
