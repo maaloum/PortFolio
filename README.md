@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Maaloum**
 
-- GitHub: [@gMaaloum](https://github.com/maaloum/)
+- GitHub: [@gMaaloum](https://maaloum.github.io/PortFolio/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
